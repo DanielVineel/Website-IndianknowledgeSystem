@@ -1,0 +1,103 @@
+
+
+@media (max-width:880px){.hero{grid-template-columns:1fr}}
+
+
+@media (max-width:1000px){
+    body{
+        padding: 0;;
+    }
+    header .row{
+        display:block;
+        position: absolute;
+        top:-110vh;
+        left:0;
+        padding:50px;
+        background-color: #e4f1f7;
+        border-radius: 10px;
+        width: 100%;
+        transition: all 2s;
+        height:100vh;
+        margin: unset;
+
+        
+    }
+    header .row div{
+        background-color: #e0f7fa;
+        border-radius: 10px;
+        border-bottom: 1px solid black;
+        padding:10px;
+        box-shadow: 1px 1px 5px 1px grey;
+        margin: 10px;;
+        transition: all 1s;
+    }
+    header .row div ul{
+        position: relative;
+        top:0;
+        left:0;
+        margin:10px;
+        
+    }
+    header .row div ul li{
+        width:100%;
+    }
+
+    header .row div:hover{
+        top:-5px;
+    }
+
+    #close{
+        position: fixed;
+        top:20px;
+        right:10px;
+        color:red;
+       
+    }
+
+    header label #menu{
+        display:inline-block ;
+    }
+    #checkbox-nav:checked ~ header label #close{
+        display:inline-block;
+    }
+    #checkbox-nav:checked ~  header label #menu{
+        display: none;
+    }
+
+
+    #checkbox-nav:checked ~ header .row{
+        top:0px;
+        left: 0;
+         height:100vh;
+        margin: unset;
+    }
+}
+
+p{
+    padding:2px;
+}
+
+@media (max-width: 413px){
+    .table {
+        display:none;
+    }
+    .card{
+        width:90%;
+        font-size: 1.0rem;
+    }
+    .header .brand{
+        font-size: 1.0rem;
+    }
+    header{
+        left:-5px;
+        /* width: 90%; */
+    }
+    .container{
+        padding-left:10px;
+    }
+}
+
+
+
+
+

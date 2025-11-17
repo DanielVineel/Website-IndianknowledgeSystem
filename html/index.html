@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home · Indian Ancient Knowledge</title>
+
+ <link rel="stylesheet" href="../css/style.css"> 
+ <link rel="stylesheet" href="../css/theme.css">
+ <link rel="stylesheet" href="../css/mobile.css"> 
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- if network is not available -->
+<script src="../js/non-network.js"></script>
+
+<!-- same using require JS -->
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    data-main="../js/fetch-images">
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <input type="checkbox" id="checkbox-nav">
+
+  
+ 
+
+<header class="header container">
+
+  <a class="brand" href="index.html">Indian Ancient Knowledge</a>
+
+   <label for="checkbox-nav"><div id="menu"><i class="menu fa fa-reorder">Menu</i></div></label>
+  <label for="checkbox-nav"> <div id="close"> <i class="close fa fa-times">Close</i></div></label>
+
+
+  <nav class="row">
+
+    <div>
+      <a href="index.html">Home</a>
+      <hr>
+    </div>
+    
+    <div>
+      <a href="history.html">History</a>
+      <hr>
+
+      <ul>
+        <li><a href="./history/history_indus.html">Indus Valley Civilization</a></li>
+        <li><a href="./history/history_vedic.html">Vedic Period</a></li>
+        <li><a href="./history/history_maurya.html">Maurya Empire</a></li>
+        <li><a href="./history/history_gupta.html">Gupta Period</a></li>
+        <li><a href="./history/history_sultanate.html">Delhi Sultanate</a></li>
+        <li><a href="./history/history_mughal.html">Mughal Empire</a></li>
+        <li><a href="./history/history_british.html">British Colonial Period</a></li>
+        <li><a href="./history/history_independence.html">Freedom Struggle & Independence</a></li>
+        <li><a href="./history/history_modern.html">Post-Independence India</a></li>
+      </ul>
+
+    </div>
+    
+    <div>
+      <a href="languages.html">Languages</a>
+      <hr>
+
+      <ul>
+        <li><a href="./languages/languages_sanskrit.html">Sanskrit</a></li>
+        <li><a href="./languages/languages_prakrit.html">Prakrit</a></li>
+        <li><a href="./languages/languages_tamil.html">Tamil</a></li>
+        <li><a href="./languages/languages_telugu.html">Telugu</a></li>
+        <li><a href="./languages/languages_hindi.html">Hindi</a></li>
+        <li><a href="./languages/languages_kannada.html">Kannada</a></li>
+      </ul>
+
+    </div>
+
+    <div>
+      <a href="medicine.html">Medicine</a>
+     <hr>
+
+      <ul>
+        <li><a href="./medicine/medicine_ayurveda.html">Ayurveda</a></li>
+        <li><a href="./medicine/medicine_yoga.html">Yoga & Holistic Healing</a></li>
+        <li><a href="./medicine/medicine_siddha.html">Siddha Medicine</a></li>
+        <li><a href="./medicine/medicine_unani.html">Unani</a></li>
+        <li><a href="./medicine/medicine_naturopathy.html">Naturopathy</a></li>
+      </ul>
+    </div>
+
+
+  </nav>
+</header>
+
+<main class="container">
+
+
+  <section class="hero">
+
+    <div>
+      <h1>Exploring India’s Ancient Knowledge</h1>
+      <p>Discover the richness of ancient Indian civilizations, classical languages, and traditional medicine systems through interactive cards and detailed topics.</p>
+    
+    </div>
+    <div>
+      <div id="home-main" class="thumb" style="height:180px;border-radius:12px;background-size:cover;background-position:center;border:1px solid rgba(255,255,255,.6);box-shadow:0 8px 30px rgba(4,46,82,.06)"></div>
+    </div>
+  </section>
+
+
+
+  <!-- Main Categories -->
+  <section style="margin-top:28px">
+    <h2>Explore Categories</h2>
+    <div class="grid">
+      <a class="card" href="history.html">
+        <div class="thumb" id="history-postIndependence" ></div>
+        <div class="body">
+          <h3>History</h3>
+          <p>From Indus Valley to classical empires — discover political, cultural, and scientific achievements.</p>
+          <div class="meta"><span></span><span class="link">Open</span></div>
+        </div>
+      </a>
+      <a class="card" href="languages.html">
+        <div class="thumb" id="languages-prakrit"></div>
+        <div class="body">
+          <h3>Languages</h3>
+          <p>Sanskrit, Tamil, and Pali — explore the scripts, literature, and oral traditions of ancient India.</p>
+          <div class="meta"><span></span><span class="link">Open</span></div>
+        </div>
+      </a>
+      <a class="card" href="medicine.html">
+        <div class="thumb" id="medicine-yoga"></div>
+        <div class="body">
+          <h3>Medicine</h3>
+          <p>Ayurveda, Siddha, and Unani — holistic health practices from India’s classical medical systems.</p>
+          <div class="meta"><span></span><span class="link">Open</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Highlights -->
+  <section style="margin-top:28px">
+    <h2>Featured Highlights</h2>
+    <div class="grid">
+      <a class="card" href="./history/history_indus.html">
+        <div class="thumb" id="history-indus"></div>
+        <div class="body">
+          <h3>Indus Valley Civilization</h3>
+          <p>Urban planning, trade, and cultural innovation in one of the world’s earliest civilizations.</p>
+        </div>
+      </a>
+      <a class="card" href="./languages/languages_sanskrit.html">
+        <div class="thumb" id="languages-sanskrit"></div>
+        <div class="body">
+          <h3>Sanskrit</h3>
+          <p>The ancient language of philosophy, science, and literature with a systematic grammar.</p>
+        </div>
+      </a>
+      <a class="card" href="./medicine/medicine_ayurveda.html">
+        <div class="thumb" id="medicine-ayurveda"></div>
+        <div class="body">
+          <h3>Ayurveda</h3>
+          <p>Principles of balance, herbal treatments, and lifestyle guidance for holistic wellness.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+
+</main>
+<!-- Footer -->
+<footer class="footer">Created by G Daniel Vineel</footer>
+
+</body>
+
+
+
+<script>
+
+
+function applyImages(id,isImg=false){
+    let arr=id.split("-")
+    let a=document.getElementById(id)
+    
+    if(isImg==false){
+      a.style.backgroundImage="url('"+window.myImages[arr[0]][arr[1]]+"')"
+    }else{
+      a.setAttribute(img,window.myImages[arr[0]][arr[1]])
+    }
+  
+  }
+
+  document.addEventListener("DOMContentLoaded",function () {
+
+      setTimeout(() => {
+      
+        let list1=document.getElementsByClassName("thumb")
+        for(let element of list1){ 
+          applyImages(element.id)
+        }
+      }, 2000);
+    
+});
+</script>
+
+
+
+
+</html>

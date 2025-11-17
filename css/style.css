@@ -1,0 +1,356 @@
+
+.container{
+    max-width:var(--maxw);margin:0 auto;
+    padding:20px;
+ 
+}
+
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 380px;
+    gap:20px;
+    padding:22px;
+    border-radius:18px;
+    background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+    /* background:linear-gradient(180deg, rgba(218, 138, 138, 0.8), rgba(44, 117, 177, 0.6)); */
+    backdrop-filter: blur(6px);
+    box-shadow:var(--card-shadow);
+    border:1px solid var(--glass-border);
+    align-items:center;
+}
+.hero h1{
+    margin:0;
+    font-size:clamp(22px,3.6vw,36px);
+    color:#063049;
+}
+.hero p{
+    margin:8px 0 0;
+    color:var(--muted);
+}
+
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:18px;
+    margin-top:20px;
+}
+.card{
+  border-radius:14px;overflow:hidden;background:linear-gradient(180deg,var(--glass),var(--glass-2));
+  border:1px solid rgba(255,255,255,0.6);backdrop-filter: blur(8px);
+  transition:transform .28s cubic-bezier(.2,.9,.2,1),box-shadow .28s;
+  box-shadow:var(--card-shadow);
+  display:flex;flex-direction:column;text-decoration:none;color:inherit;
+}
+.card:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 18px 40px rgba(30,156,230,0.12);
+}
+.card .thumb{
+    height:160px;
+    background-size:cover;
+    background-position:center;
+    display:block;
+}
+.card .body{
+    padding:14px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.card h3{
+    margin:0;
+    font-size:1.05rem;
+    color:#05364a;
+}
+.card p{
+    margin:0;
+    color:var(--muted);
+    font-size:0.95rem;
+    flex:1;
+}
+
+
+.card .meta{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:12px;
+}
+.link{
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:700;
+    font-size:0.95rem;
+}
+
+
+.detail-hero{
+
+    
+
+
+    border-radius:14px;
+    overflow:hidden;
+   
+    background:linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.5));
+    border:1px solid rgba(255,255,255,0.6);
+    box-shadow:var(--card-shadow);
+
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: var(--maxw);
+}
+.detail-hero .img{
+    height:340px;
+    background-size:cover;
+    background-position:center;
+}
+.detail-content{
+    padding:18px;
+    background:transparent;
+}
+.detail-content h2{
+    margin-top:0;
+    color:#05364a;
+}
+.detail-content p{
+    color:var(--muted);
+    line-height:1.6;
+}
+
+
+.row{
+    
+    display:flex;
+    gap:12px;
+    align-items:center;flex-wrap:wrap}
+.tag{background:rgba(30,156,230,0.08);padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:600}
+
+
+
+.detail-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: var(--maxw);
+}
+
+.detail-hero .img {
+    width: 100%;
+    max-height: 400px;
+    height: 350px;
+    background-size: 100% 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.detail-content {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.detail-content ul{
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+}
+
+.detail-content h2,
+.detail-content h3 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.detail-content p {
+    margin-bottom: 15px;
+}
+
+.detail-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.footer {
+    text-align: center;
+    margin: 15px 0;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+
+.table table{
+    width: 95%;
+    margin:10px 2.5%;
+    text-align: center;
+   
+
+ 
+}
+.table table td,.table table th{
+    padding: 10px;
+}
+.table table tr{
+    font-weight: 300;
+    transition: all 1s;
+}
+.table table tr:hover{
+    background-color: rgb(199, 255, 236);
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+
+.detail-hero .thumb{
+    box-shadow: 0px 0px 7px 2px grey;
+}
+
+.load-circle{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    z-index: 13;
+    position: absolute;
+    
+}
+
+.load-circle.green{
+    
+    background-color: green;
+    top:10px;
+    left:10px;
+    animation: circle1 0.6s linear;
+    animation-iteration-count: 1;
+       animation-fill-mode: forwards;
+}
+
+.load-circle.red{
+    background-color: red;
+    top:10px;
+    right:10px;
+     animation: circle2 0.6s linear;
+    animation-iteration-count: 1;
+       animation-fill-mode: forwards;
+}
+.load-circle.blue{
+    background-color: blue;
+    bottom: 10px;
+    left:10px;
+    animation: circle3 0.6s linear;
+    animation-iteration-count: 1;
+       animation-fill-mode: forwards;
+}
+.load-circle.yellow{
+    background-color: yellow;
+    bottom:10px;
+    right:10px;
+    animation: circle4 0.6s linear;
+    animation-iteration-count: 1;
+       animation-fill-mode: forwards;
+}
+
+
+
+.rotate-box{
+    animation-name: rotate;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes circle1{
+    0%{
+        top:0%;
+        left:0%;
+
+    }
+    
+    100%{
+    
+        top:calc(50% - 20px );
+        left:calc(50% - 20px );
+        
+
+    }
+  
+}
+
+/* left */
+@keyframes circle2{
+    0%{
+        top:0%;
+        right:0%;
+
+    }
+    
+    100%{
+        top:calc(50% - 20px );
+        right:calc(50% - 20px );
+        
+
+    }
+  
+}
+
+
+@keyframes circle3{
+    0%{
+        bottom:0%;
+        left:0%;
+
+    }
+   
+    100%{
+   
+        bottom:calc(50% - 20px);
+        left:calc(50%  - 20px);
+        
+
+    }
+
+}
+
+@keyframes circle4{
+    0%{
+        bottom:0%;
+        right:0%;
+
+    }
+    
+    100%{
+       
+        bottom:calc(50% - 20px );
+        right:calc(50% - 20px );
+        
+
+    }
+  
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateZ(-720deg);
+    }
+}
