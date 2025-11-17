@@ -1,5 +1,5 @@
 # Website-IndianknowledgeSystem
-visit -> https://danielvineel.github.io/Website-IndianknowledgeSystem/html for live demo
+visit -> [https://danielvineel.github.io/Website-IndianknowledgeSystem/html](https://danielvineel.github.io/Website-IndianknowledgeSystem/html) for live demo
 
 # features
  Responsiveness
