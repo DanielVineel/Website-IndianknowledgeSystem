@@ -42,17 +42,7 @@ window.myImages={
 
     document.addEventListener("DOMContentLoaded",function(){
      
-        if(window.location.hostname==""){
-            return;
-        }
-        let icons=document.getElementsByClassName("menu")
-        for(let ele of icons){
-            ele.innerHTML=""
-        }
-        icons=document.getElementsByClassName("close")
-        for(let ele of icons){
-            ele.innerHTML=""
-        }
+       
    
 
 
@@ -111,7 +101,35 @@ window.myImages={
         }, 1200);
 
     }
+
+
 loadScreen()
+        
+        if((window.getComputedStyle(document.getElementsByClassName("menu")[0], '::before')).getPropertyValue('content')==""){
+
+            let icons=document.getElementsByClassName("menu")
+            for(let ele of icons){
+                ele.innerHTML=""
+            }
+            icons=document.getElementsByClassName("close")
+            for(let ele of icons){
+                ele.innerHTML=""
+            }
+        }
+       
+        if(window.location.hostname==""){
+            return;
+        }
+
+         icons=document.getElementsByClassName("menu")
+            for(let ele of icons){
+                ele.innerHTML=""
+            }
+            icons=document.getElementsByClassName("close")
+            for(let ele of icons){
+                ele.innerHTML=""
+            }
+       
 
 
 
